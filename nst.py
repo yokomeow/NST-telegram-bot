@@ -333,7 +333,7 @@ class NST:
             print('Result saved as result.png')
 
 
-def main(content_image_name, style_image_name):
+async def main(content_image_name, style_image_name):
     start_time = time.time()
 
     #content_image_name = "drive/MyDrive/NST_proj/images/city-sunset.jpg"  # change path if needed
@@ -347,3 +347,5 @@ def main(content_image_name, style_image_name):
     print("Execution time: %s seconds" % (time.time() - start_time))
 
     save_image(nst_model.output[0], 'images/results/bot-result.png')
+
+    return 0

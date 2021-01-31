@@ -6,7 +6,7 @@ from shutil import copyfile
 from telebot import types
 
 
-bot = telebot.TeleBot(config.TOKEN)
+#bot = telebot.TeleBot(config.TOKEN)
 
 
 @bot.message_handler(commands=['start'])

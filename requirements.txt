@@ -1,0 +1,13 @@
+# pip install pyTelegramAPI
+# pip install uvloop
+# pip install ujson
+
+# Check if your Python version is up-to-date.
+# Create config.py file which contains your bot token.
+
+
+torch~=1.7.0
+matplotlib~=3.3.2
+torchvision~=0.8.1
+Pillow~=8.0.1
+aiogram~=2.11.2
