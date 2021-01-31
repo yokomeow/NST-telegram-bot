@@ -5,9 +5,7 @@
 # Check if your Python version is up-to-date.
 # Create config.py file which contains your bot token.
 
-https://download.pytorch.org/whl/cpu/torch-1.1.0-cp37-cp37m-linux_x86_64.whl
-https://download.pytorch.org/whl/cpu/torchvision-0.3.0-cp37-cp37m-linux_x86_64.whl
-fastai
+pip install torch==1.7.1+cpu torchvision==0.8.2+cpu torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
 # torch~=1.7.0
 matplotlib~=3.3.2
 #torchvision~=0.8.1
