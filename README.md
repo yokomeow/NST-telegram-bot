@@ -34,5 +34,10 @@ Also, you may check an existing example of NST by clicking the "Show example" bu
 
 I hope, you enjoy it!
 
+## Examples
+
+<img src='https://github.com/yokomeow/NST-telegram-bot/blob/main/images/source/van_gogh.jpg' height='250' width='250'/> <img src='https://github.com/yokomeow/NST-telegram-bot/blob/main/images/results/content_image-1.jpg' height='250' width='250'/> <img src='https://github.com/yokomeow/NST-telegram-bot/blob/main/images/results/bot-result-1.png' height='250' width='250'/>
+
+<img src='https://github.com/yokomeow/NST-telegram-bot/blob/main/images/source/afremov.jpg' height='250' width='250'/> <img src='https://github.com/yokomeow/NST-telegram-bot/blob/main/images/results/content_image-3.jpg' height='250' width='250'/> <img src='https://github.com/yokomeow/NST-telegram-bot/blob/main/images/results/bot-result-3.png' height='250' width='250'/>
 ## Contact
 Feel free to contact me if there are any questions (Vladislava Kontsevaya kontsevaya.va@phystech.edu).
