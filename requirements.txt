@@ -1,7 +1,3 @@
-# pip install pyTelegramAPI
-# pip install uvloop
-# pip install ujson
-
 # Check if your Python version is up-to-date.
 # Create config.py file which contains your bot token.
 

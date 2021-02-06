@@ -10,16 +10,16 @@ from shutil import copyfile
 
 
 # webhook settings
-#WEBHOOK_HOST = 'https://your.domain'
-#WEBHOOK_PATH = '/path/to/api'
-#WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}"
+# WEBHOOK_HOST = 'https://your.domain'
+# WEBHOOK_PATH = '/path/to/api'
+# WEBHOOK_URL = f"{WEBHOOK_HOST}{WEBHOOK_PATH}"
 
 # webserver settings
-#WEBAPP_HOST = 'localhost'  # or ip
-#WEBAPP_PORT = 3001
+# WEBAPP_HOST = 'localhost'  # or ip
+# WEBAPP_PORT = 3001
 
-#port
-#PORT = int(os.environ.get('PORT', 5000))
+# port
+# PORT = int(os.environ.get('PORT', 5000))
 
 # logging level
 logging.basicConfig(level=logging.INFO)
@@ -94,15 +94,15 @@ async def handle_photo(message: types.Message):
     await bot.send_message(message.chat.id, 'Фото успешно загружено!')
 
     style_reply_markup = types.InlineKeyboardMarkup(row_width=2, one_time_keyboard=True)
-    style_reply_button1 = types.InlineKeyboardButton('Ван Гог', callback_data='gogh')
-    style_reply_button2 = types.InlineKeyboardButton('Пикассо', callback_data='picasso')
-    style_reply_button3 = types.InlineKeyboardButton('Моне', callback_data='monet')
+    style_reply_button1 = types.InlineKeyboardButton('Ван Гог (1)', callback_data='gogh')
+    style_reply_button2 = types.InlineKeyboardButton('Пикассо (2)', callback_data='picasso')
+    style_reply_button3 = types.InlineKeyboardButton('Афремов (3)', callback_data='afremov')
 
     style_reply_markup.add(style_reply_button1, style_reply_button2, style_reply_button3)
 
     style_pic1 = open('images/source/van_gogh.jpg', 'rb')
     style_pic2 = open('images/source/picasso.jpg', 'rb')
-    style_pic3 = open('images/source/monet.jpg', 'rb')
+    style_pic3 = open('images/source/afremov.jpg', 'rb')
 
     await bot.send_photo(message.chat.id, style_pic1)
     await bot.send_photo(message.chat.id, style_pic2)
@@ -129,9 +129,9 @@ async def callback_inline(call):
                 await bot.send_message(call.message.chat.id, 'Пикассо - замечательно! 🌚')
                 copyfile('images/source/picasso.jpg', 'images/source/style_image.jpg')
                 await launch_nst(call.message)
-            elif call.data == 'monet':
-                await bot.send_message(call.message.chat.id, 'Моне - чудесная задумка! 🌺')
-                copyfile('images/source/monet.jpg', 'images/source/style_image.jpg')
+            elif call.data == 'afremov':
+                await bot.send_message(call.message.chat.id, 'Чудесная задумка! 🌺')
+                copyfile('images/source/afremov.jpg', 'images/source/style_image.jpg')
                 await launch_nst(call.message)
             # result feedback
             elif call.data == 'amazing':
@@ -181,15 +181,15 @@ async def launch_nst(message):
     result_reply_markup.add(result_reply_button1, result_reply_button2, result_reply_button3, result_reply_button4)
 
     await bot.send_message(message.chat.id, 'Ну, как тебе? 🧐', reply_markup=result_reply_markup)
-    # await bot.send_message(message.chat.id, 'Чтобы попробовать еще раз, просто отправь мне новое фото. ☺️')
+    await bot.send_message(message.chat.id, 'Чтобы попробовать еще раз, просто отправь мне новое фото. ☺️')
 
 
-#async def on_startup(dp):
+# async def on_startup(dp):
 #    await bot.set_webhook(WEBHOOK_URL)
     # insert code here to run it after start
 
 
-#async def on_shutdown(dp):
+# async def on_shutdown(dp):
 #    logging.warning('Shutting down..')
 
     # insert code here to run it before shutdown
