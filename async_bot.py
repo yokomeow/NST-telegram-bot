@@ -149,7 +149,7 @@ async def callback_inline(call):
     except Exception as e:
         print(repr(e))
 
-
+1589660470:AAF6u8t2kdtwO3smV_pODxUqndIOo0OmZww
 # launch style transfer
 async def launch_nst(message):
     # print('ok')
