@@ -32,6 +32,8 @@ Next, just follow the bot instructions:
 3) Finally, you will get the result no more then 6 min later.
 Also, you may check an existing example of NST by clicking the "Show example" button.
 
+P.S. Current instructions implemented in Russian language, later English and French versions will be added.
+
 I hope, you enjoy it!
 
 ## Examples
